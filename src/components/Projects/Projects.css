@@ -1,0 +1,44 @@
+.projects-holder {width: 100%; height: 100vh; position: relative; box-sizing: border-box; overflow-x: hidden; background-color: #DEDEDE;}
+.projects {position: absolute; transform: translate(50%, -50%) rotateZ(90deg); right: 10px; top: 50%; font-size: 90px; color: #BBBBBB; font-weight: 600;}
+
+.headings {display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px 0 0;}
+.headings p {font-size: 14px; color: #A89F82; font-weight: 400;}
+
+.journey-points { position: relative; display: flex; justify-content: space-between; margin-top: 50px;}
+.journey-points span {position: absolute; top: 25px; left: 10px; right: 10px; height: 2px; width: 90%; background-color: black; border-radius: 50px; z-index: 0;}
+.details-container {z-index: 3;}
+.nodesData {display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 0px 0 20px; font-size: 14px; position: relative;}
+.node-icons {position: absolute; top: -15px; left: 50%; transform: translateX(-50%); font-size: 10px;}
+.nodeBlock {padding: 10px 20px; border: 2px solid #A89F82; background-color: #DEDEDE; transition: .4s;}
+.nodeBlock:hover {cursor: pointer; background-color: #BBBBBB;}
+.nodeBlockSelected {padding: 10px 20px; border: 2px solid black; background-color: #A89F82;}
+.nodeBlockSelected:hover {cursor: pointer;}
+.node-heading {margin-top: 10px; color: #130E59; font-size: 12px;}
+
+.align-projects {display: flex; flex-direction: column; height: 100%;}
+.project-data {display: flex; justify-content: space-between; align-items: center; margin: 40px 0;}
+.project-window {width: 200px; height: 120px; border: 3px solid black; border-radius: 5px; overflow: hidden; transform: rotateZ(-10deg);}
+.project-window img {width: 100%; height: 100%;}
+.homeImg {width: 20%;}
+.project-info {width: 60%;}
+.project-info h5, .project-info-zero h5 {font-size: 18px;}
+.project-info p, .project-info-zero p {font-size: 14px; margin-top: 10px; line-height: 28px;}
+.project-icons {font-size: 20px; color: black; transition: .4s;}
+.project-icons:hover {color: #A89F82; cursor: pointer;}
+.display-icons {display: none;}
+
+.project-description {margin-top: 20px;}
+.project-description p {font-size: 14px; line-height: 28px;}
+
+@media screen and (max-width: 650px) {
+    .journey-points {display: none;}
+    .project-data {flex-direction: column;}
+    .project-window {transform: rotateZ(0deg); margin-bottom: 40px;}
+    .project-data .project-icons {display: none;}
+    .display-icons {display: flex; width: 100%; justify-content: space-around;}
+    .project-description {margin: 50px 20px 0; z-index: 3;}
+    .homeImg {width: 80%; margin-bottom: 40px;}
+    .project-info-zero{
+        text-align: center;
+    }
+}

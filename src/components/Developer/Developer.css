@@ -1,0 +1,52 @@
+.dev-holder {width: 100%; height: 100vh; position: relative; box-sizing: border-box; overflow-x: hidden;}
+.upperflow {background-color: #C9C9C9; position: absolute; top: 0; left: 0; width: 100%; height: 50%; z-index: -1;}
+.lowerflow {background-color: #DEDEDE; position: absolute; bottom: 0; left: 0; width: 100%; height: 50%; z-index: -2;}
+.developer {position: absolute; transform: translate(50%, -50%) rotateZ(90deg); right: 10px; top: 50%; font-size: 90px; color: #BBBBBB; font-weight: 600;}
+
+.main-container {width: 100%; height: 100%;}
+.name-container {width: 100%; height: 30%; display: flex; align-items: flex-end;}
+.tarun-title {margin-bottom: 30px; position: relative;}
+.tarun-title::after {content: ''; position: absolute; bottom: -5px; left: 0; width: 50%; height: 4px; border-radius: 20px; background-color: #A89F82;}
+.detailsContainer {width: 100%; height: 70%;}
+
+.first-row {height: 100%;}
+.about-me {background-color: #A89F82; height: 100%; border-top-right-radius: 50px;}
+.about-me-upper {width: 100%; padding: 0 30px;}
+.about-me-lower {width: 100%; margin-top: 20px;}
+.lower-left { height: 100%; display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;}
+.icons {font-size: 75px; color: white; background-color: black; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(127, 127, 127, .6); margin: 10px; transition: .4s;}
+.icons:hover {color: #A89F82; cursor: pointer; border-radius: 50px;}
+.lower-right {display: flex;}
+.window {margin: auto; width: 80%; height: 80%; border: 5px solid black; border-radius: 10px;}
+.window img {width: 100%; height: 100%; border-radius: 10px;}
+
+.about-info {line-height: 34px; font-size: 14px; margin-top: 30px;}
+.about-info-extra {line-height: 34px; font-size: 14px;}
+.contact-info {line-height: 34px; font-size: 14px; font-weight: 600; color: #130E59;}
+
+.skills {height: 100%; display: flex; justify-content: center; align-items: flex-end; position: relative;}
+.skills img {height: 100%;}
+.skills button {background-color: white; position: absolute; border: none; font-size: 14px; border-radius: 50px; box-shadow: 0 4px 10px rgba(127, 127, 127, .6); width: 110px; height: 50px;cursor: default;}
+.skills button:hover {cursor: default;}
+.skills button:focus {outline: none;}
+.skills button:nth-child(2) {top: 20px; transform: translateX(-80%); right: 0;}
+.skills button:nth-child(3) {bottom: 20px; transform: translateX(80%); left: 0;}
+.skills button:nth-child(4) {top: 60%; transform: translateX(-80%); right: 0;}
+.skills button:nth-child(5) {bottom: 60%; transform: translateX(80%); left: 0;}
+
+@media screen and (max-width: 650px) {
+    .name-container {height: 20%;}
+    .developer {display: none;}
+    .skills img {height: 90%;}
+    .icons {font-size: 50px; color: white; background-color: black; padding: 10px; border-radius: 10px;}
+    .about-me {background-color: #A89F82; height: 100%; border-top-right-radius: 30px; border-top-left-radius: 30px;}
+    .about-me-lower {margin-top: 20px;}
+    .lower-left {height: 40%;}
+    .lower-right {margin: 40px 0;}
+    .window {height: 150px;}
+
+    .skills button:nth-child(2) {top: 60px; transform: translateX(0%); right: 0;}
+    .skills button:nth-child(3) {bottom: 60px; transform: translateX(0%); left: 0;}
+    .skills button:nth-child(4) {top: 60%; transform: translateX(0%); right: 0;}
+    .skills button:nth-child(5) {bottom: 60%; transform: translateX(0%); left: 0;}
+}
